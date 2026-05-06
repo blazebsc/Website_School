@@ -11,3 +11,13 @@ html {
   body {
     font-family: "JetBrains Mono", monospace;
   }
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
