@@ -1,6 +1,7 @@
 html {
     background-image: linear-gradient(to right, pink, purple);
 }
+
 @font-face {
     font-family: "JetBrains Mono";
     src: url("./fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
