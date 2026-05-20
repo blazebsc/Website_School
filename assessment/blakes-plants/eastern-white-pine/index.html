@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eastern White Pine</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <div class="plant-page">
@@ -14,15 +14,23 @@
         <img src="eastern-white-pine.jpg" alt="Eastern White Pine" class="plant-hero" />
       </div>
       <div class="plant-info">
-        <p>Learn more about Eastern White Pine. This plant is a great addition to any indoor or outdoor garden.</p>
+        <h4>Learn more about Eastern White Pine. This plant is a great addition to any indoor or outdoor garden.</h4>
         <h2>Care Tips</h2>
         <ul>
-          <li>Provide adequate sunlight based on plant needs</li>
-          <li>Water regularly but avoid overwatering</li>
-          <li>Use well-draining soil</li>
-          <li>Monitor for pests and diseases</li>
+          <li><h5>Provide adequate sunlight based on plant needs</h5></li>
+          <li><h5>Water regularly but avoid overwatering</h5></li>
+          <li><h5>Use well-draining soil</h5></li>
+          <li><h5>Monitor for pests and diseases</h5></li>
         </ul>
       </div>
+    
+    <div class="quantity-controls">
+      <button class="qty-btn" onclick="changeQty(-1)">-</button>
+      <span id="qty-display">1</span>
+      <button class="qty-btn" onclick="changeQty(1)">+</button>
+    </div>
+    <button class="add-to-cart-btn" onclick="addToCart('eastern-white-pine')">Add to Cart</button>
+
     </div>
   </body>
 </html>

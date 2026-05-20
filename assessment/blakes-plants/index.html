@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="cart-header">
+      <button id="cart-btn" class="cart-btn">
+        🛒 Cart <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+      </div>
+    </div>
     <h1>Welcome to Blake's Plants</h1>
     <h2>You one stop shop for plants indoor and outdoor!</h2>
     <div class="grid-container">
@@ -83,25 +95,25 @@
         <img src="elephant-ear/elephant-ear.jpg" alt="Elephant Ear" class="plant-img">
         <h3 class="plant-name">Elephant Ear</h3>
       </a>
-      <a href="feather-reed/" class="rounded-box">
-        <img src="feather-reed/feather-reed.jpg" alt="Feather Reed" class="plant-img">
-        <h3 class="plant-name">Feather Reed</h3>
+      <a href="feather-reed-grass/" class="rounded-box">
+        <img src="feather-reed-grass/feather-reed-grass.jpg" alt="Feather Reed Grass" class="plant-img">
+        <h3 class="plant-name">Feather Reed Grass</h3>
       </a>
-      <a href="gas/" class="rounded-box">
-        <img src="gas/gas.jpg" alt="Gas" class="plant-img">
-        <h3 class="plant-name">Gas</h3>
+      <a href="gas-plant/" class="rounded-box">
+        <img src="gas-plant/gas-plant.jpg" alt="Gas Plant" class="plant-img">
+        <h3 class="plant-name">Gas Plant</h3>
       </a>
-      <a href="gaura-the-wandflower/" class="rounded-box">
-        <img src="gaura-the-wandflower/gaura-the-wandflower.jpg" alt="Gaura The Wandflower" class="plant-img">
+      <a href="gaura-wandflower/" class="rounded-box">
+        <img src="gaura-wandflower/gaura-wandflower.jpg" alt="Gaura The Wandflower" class="plant-img">
         <h3 class="plant-name">Gaura The Wandflower</h3>
       </a>
       <a href="gerber-daises/" class="rounded-box">
         <img src="gerber-daises/gerber-daises.jpeg" alt="Gerber Daises" class="plant-img">
         <h3 class="plant-name">Gerber Daises</h3>
       </a>
-      <a href="ghost/" class="rounded-box">
-        <img src="ghost/ghost.jpg" alt="Ghost" class="plant-img">
-        <h3 class="plant-name">Ghost</h3>
+      <a href="ghost-plant/" class="rounded-box">
+        <img src="ghost-plant/ghost-plant.jpg" alt="Ghost Plant" class="plant-img">
+        <h3 class="plant-name">Ghost Plant</h3>
       </a>
       <a href="golden-shadows-pagoda-dogwood/" class="rounded-box">
         <img src="golden-shadows-pagoda-dogwood/golden-shadows-pagoda-dogwood.jpg" alt="Golden Shadows Pagoda Dogwood" class="plant-img">
@@ -119,9 +131,9 @@
         <img src="hawthorn-tree/hawthorn-tree.jpg" alt="Hawthorn Tree" class="plant-img">
         <h3 class="plant-name">Hawthorn Tree</h3>
       </a>
-      <a href="hosta-halcyon-blue-hosta/" class="rounded-box">
-        <img src="hosta-halcyon-blue-hosta/hosta-halcyon-blue-hosta.jpg" alt="Hosta Halcyon Blue Hosta" class="plant-img">
-        <h3 class="plant-name">Hosta Halcyon Blue Hosta</h3>
+      <a href="hosta-halcyon-blue/" class="rounded-box">
+        <img src="hosta-halcyon-blue/hosta-halcyon-blue.jpg" alt="Hosta Halcyon Blue" class="plant-img">
+        <h3 class="plant-name">Hosta Halcyon Blue</h3>
       </a>
       <a href="inaba-shidare-japanese-maple/" class="rounded-box">
         <img src="inaba-shidare-japanese-maple/inaba-shidare-japanese-maple.jpg" alt="Inaba Shidare Japanese Maple" class="plant-img">
@@ -147,9 +159,9 @@
         <img src="jade-pothos/jade-pothos.jpg" alt="Jade Pothos" class="plant-img">
         <h3 class="plant-name">Jade Pothos</h3>
       </a>
-      <a href="jane-magnolia-to-brighten/" class="rounded-box">
-        <img src="jane-magnolia-to-brighten/jane-magnolia-to-brighten.jpg" alt="Jane Magnolia To Brighten" class="plant-img">
-        <h3 class="plant-name">Jane Magnolia To Brighten</h3>
+      <a href="jane-magnolia/" class="rounded-box">
+        <img src="jane-magnolia/jane-magnolia.jpg" alt="Jane Magnolia" class="plant-img">
+        <h3 class="plant-name">Jane Magnolia</h3>
       </a>
       <a href="japanese-yews/" class="rounded-box">
         <img src="japanese-yews/japanese-yews.jpg" alt="Japanese Yews" class="plant-img">
@@ -163,13 +175,13 @@
         <img src="katsura-tree/katsura-tree.jpg" alt="Katsura Tree" class="plant-img">
         <h3 class="plant-name">Katsura Tree</h3>
       </a>
-      <a href="kiwi/" class="rounded-box">
-        <img src="kiwi/kiwi.jpg" alt="Kiwi" class="plant-img">
-        <h3 class="plant-name">Kiwi</h3>
+      <a href="kiwi-vine/" class="rounded-box">
+        <img src="kiwi-vine/kiwi-vine.jpg" alt="Kiwi Vine" class="plant-img">
+        <h3 class="plant-name">Kiwi Vine</h3>
       </a>
-      <a href="lady/" class="rounded-box">
-        <img src="lady/lady.jpg" alt="Lady" class="plant-img">
-        <h3 class="plant-name">Lady</h3>
+      <a href="lady-fern/" class="rounded-box">
+        <img src="lady-fern/lady-fern.jpg" alt="Lady Fern" class="plant-img">
+        <h3 class="plant-name">Lady Fern</h3>
       </a>
       <a href="lambs-ears/" class="rounded-box">
         <img src="lambs-ears/lambs-ears.jpg" alt="Lambs Ears" class="plant-img">
@@ -267,17 +279,17 @@
         <img src="shade-tolerant-impatiens/shade-tolerant-impatiens.jpg" alt="Shade Tolerant Impatiens" class="plant-img">
         <h3 class="plant-name">Shade Tolerant Impatiens</h3>
       </a>
-      <a href="snake/" class="rounded-box">
-        <img src="snake/snake.jpg" alt="Snake" class="plant-img">
-        <h3 class="plant-name">Snake</h3>
+      <a href="snake-plant/" class="rounded-box">
+        <img src="snake-plant/snake-plant.jpg" alt="Snake Plant" class="plant-img">
+        <h3 class="plant-name">Snake Plant</h3>
       </a>
-      <a href="summer/" class="rounded-box">
-        <img src="summer/summer.jpg" alt="Summer" class="plant-img">
-        <h3 class="plant-name">Summer</h3>
+      <a href="summer-blooming-oakleaf-hydrangea/" class="rounded-box">
+        <img src="summer-blooming-oakleaf-hydrangea/summer-blooming-oakleaf-hydrangea.jpg" alt="Summer Blooming Oakleaf Hydrangea" class="plant-img">
+        <h3 class="plant-name">Summer Blooming Oakleaf Hydrangea</h3>
       </a>
-      <a href="tall/" class="rounded-box">
-        <img src="tall/tall.jpg" alt="Tall" class="plant-img">
-        <h3 class="plant-name">Tall</h3>
+      <a href="tall-garden-phlox/" class="rounded-box">
+        <img src="tall-garden-phlox/tall-garden-phlox.jpg" alt="Tall Garden Phlox" class="plant-img">
+        <h3 class="plant-name">Tall Garden Phlox</h3>
       </a>
       <a href="tall-fescue/" class="rounded-box">
         <img src="tall-fescue/tall-fescue.jpg" alt="Tall Fescue" class="plant-img">
@@ -295,9 +307,9 @@
         <img src="taylor-juniper/taylor-juniper.jpg" alt="Taylor Juniper" class="plant-img">
         <h3 class="plant-name">Taylor Juniper</h3>
       </a>
-      <a href="vanilla/" class="rounded-box">
-        <img src="vanilla/vanilla.jpg" alt="Vanilla" class="plant-img">
-        <h3 class="plant-name">Vanilla</h3>
+      <a href="vanilla-orchid/" class="rounded-box">
+        <img src="vanilla-orchid/vanilla-orchid.jpg" alt="Vanilla Orchid" class="plant-img">
+        <h3 class="plant-name">Vanilla Orchid</h3>
       </a>
       <a href="venus-fly-trap/" class="rounded-box">
         <img src="venus-fly-trap/venus-fly-trap.jpg" alt="Venus Fly Trap" class="plant-img">
@@ -339,13 +351,13 @@
         <img src="yerba-mate/yerba-mate.jpg" alt="Yerba Mate" class="plant-img">
         <h3 class="plant-name">Yerba Mate</h3>
       </a>
-      <a href="zebra/" class="rounded-box">
-        <img src="zebra/zebra.jpg" alt="Zebra" class="plant-img">
-        <h3 class="plant-name">Zebra</h3>
+      <a href="zebra-grass/" class="rounded-box">
+        <img src="zebra-grass/zebra-grass.jpg" alt="Zebra Grass" class="plant-img">
+        <h3 class="plant-name">Zebra Grass</h3>
       </a>
-      <a href="zoysia/" class="rounded-box">
-        <img src="zoysia/zoysia.jpg" alt="Zoysia" class="plant-img">
-        <h3 class="plant-name">Zoysia</h3>
+      <a href="zoysia-grass/" class="rounded-box">
+        <img src="zoysia-grass/zoysia-grass.jpg" alt="Zoysia Grass" class="plant-img">
+        <h3 class="plant-name">Zoysia Grass</h3>
       </a>
     </div>
   </body>
