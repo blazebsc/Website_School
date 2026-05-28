@@ -1,4 +1,3 @@
-/* font import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* page font settings */
 body {
@@ -15,7 +14,7 @@ html {
   background-color: rgb(2, 54, 2);
 }
 
-/* main page grid layout */
+/* main page layout */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -164,4 +163,12 @@ h1 {
   left: 0;
   font-size: 0.7rem;
   top: 4px;
+}
+
+/* google search link colors */
+.plant-info h4 a {
+  color: #87CEEB;
+}
+.plant-info h4 a:visited {
+  color: #DDA0DD;
 }
