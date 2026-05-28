@@ -1,11 +1,5 @@
 /* font import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* page background */
-html {
-  background-color: rgb(2, 54, 2);
-}
-
 /* page font settings */
 body {
   font-family: "Montserrat", sans-serif;
@@ -14,6 +8,11 @@ body {
   font-style: normal;
   color: white;
   text-align: center;
+}
+
+/* page background */
+html {
+  background-color: rgb(2, 54, 2);
 }
 
 /* main page grid layout */
@@ -64,7 +63,7 @@ body {
   padding: 1px;
 }
 
-/* plant page container */
+/* plant page */
 .plant-page {
   max-width: 800px;
   margin: 0 auto;
@@ -96,7 +95,7 @@ h1 {
   text-align: center;
 }
 
-/* plant hero image container */
+/* plant image container */
 .plant-image-container {
   width: 100%;
   border-radius: 15px;
