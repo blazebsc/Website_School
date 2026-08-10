@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Plant Cell</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Plant Cell Model</h1>
+  <p>Click a part of the cell to learn about it.</p>
+</header>
+
+<div class="container">
+
+  <div class="cell-box">
+    <svg viewBox="0 0 700 600">
+
+      <!-- Cell wall -->
+      <ellipse
+        class="part"
+        data-name="Cell Wall"
+        data-info="The cell wall is the strong outer layer of a plant cell. It supports and protects the cell and helps it keep its shape."
+        cx="350" cy="300" rx="285" ry="235"
+        fill="#83b866"
+        stroke="#426f3c"
+        stroke-width="20"/>
+
+      <!-- Cell membrane -->
+      <ellipse
+        class="part"
+        data-name="Cell Membrane"
+        data-info="The cell membrane is a thin layer inside the cell wall. It controls what enters and leaves the cell."
+        cx="350" cy="300" rx="267" ry="217"
+        fill="#b9dd82"
+        stroke="#e4f3b9"
+        stroke-width="6"/>
+
+      <!-- Cytoplasm -->
+      <ellipse
+        class="part"
+        data-name="Cytoplasm"
+        data-info="Cytoplasm is the jelly-like material inside the cell. Many of the cell's chemical reactions happen here."
+        cx="350" cy="300" rx="255" ry="205"
+        fill="#d2e99b"/>
+
+      <!-- Central vacuole -->
+      <path
+        class="part"
+        data-name="Central Vacuole"
+        data-info="The large central vacuole stores water and other substances. It also helps keep the plant cell firm."
+        d="M350 150
+           C430 130 510 165 525 240
+           C545 335 505 430 415 450
+           C330 470 245 420 240 335
+           C235 245 270 175 350 150Z"
+        fill="#8ed4ef"
+        stroke="#4b9ec4"
+        stroke-width="6"/>
+
+      <!-- Nucleus -->
+      <ellipse
+        class="part"
+        data-name="Nucleus"
+        data-info="The nucleus contains the cell's DNA. It controls many of the activities of the cell."
+        cx="225" cy="325" rx="78" ry="68"
+        fill="#ad78c8"
+        stroke="#70458c"
+        stroke-width="6"/>
+
+      <circle
+        cx="235" cy="330" r="22"
+        fill="#70458c"/>
+
+      <!-- Chloroplasts -->
+      <g class="part"
+         data-name="Chloroplast"
+         data-info="Chloroplasts contain chlorophyll and carry out photosynthesis. They use light energy to help make food for the plant.">
+
+        <ellipse cx="150" cy="205" rx="58" ry="28"
+                 fill="#3f9c4d" stroke="#267238" stroke-width="5"/>
+        <path d="M110 195 H190 M105 205 H195 M112 215 H188"
+              stroke="#9ddd63" stroke-width="5"/>
+      </g>
+
+      <g class="part"
+         data-name="Chloroplast"
+         data-info="Chloroplasts contain chlorophyll and carry out photosynthesis. They use light energy to help make food for the plant.">
+
+        <ellipse cx="545" cy="190" rx="58" ry="28"
+                 fill="#3f9c4d" stroke="#267238" stroke-width="5"/>
+        <path d="M505 180 H585 M500 190 H590 M507 200 H583"
+              stroke="#9ddd63" stroke-width="5"/>
+      </g>
+
+      <g class="part"
+         data-name="Chloroplast"
+         data-info="Chloroplasts contain chlorophyll and carry out photosynthesis. They use light energy to help make food for the plant.">
+
+        <ellipse cx="555" cy="420" rx="58" ry="28"
+                 fill="#3f9c4d" stroke="#267238" stroke-width="5"/>
+        <path d="M515 410 H595 M510 420 H600 M517 430 H593"
+              stroke="#9ddd63" stroke-width="5"/>
+      </g>
+
+      <!-- Mitochondria -->
+      <g class="part"
+         data-name="Mitochondrion"
+         data-info="Mitochondria release usable energy for the cell through cellular respiration.">
+
+        <ellipse cx="410" cy="105" rx="48" ry="25"
+                 fill="#e27c5c" stroke="#a84d3d" stroke-width="5"/>
+        <path d="M380 105 Q395 88 410 105 T440 105"
+              fill="none" stroke="#ffd0a9" stroke-width="4"/>
+      </g>
+
+      <g class="part"
+         data-name="Mitochondrion"
+         data-info="Mitochondria release usable energy for the cell through cellular respiration.">
+
+        <ellipse cx="155" cy="445" rx="48" ry="25"
+                 fill="#e27c5c" stroke="#a84d3d" stroke-width="5"/>
+        <path d="M125 445 Q140 428 155 445 T185 445"
+              fill="none" stroke="#ffd0a9" stroke-width="4"/>
+      </g>
+
+      <!-- Golgi -->
+      <g class="part"
+         data-name="Golgi Apparatus"
+         data-info="The Golgi apparatus modifies, sorts and packages proteins and other materials so they can be transported around or out of the cell."
+         fill="none"
+         stroke="#e3a844"
+         stroke-width="9"
+         stroke-linecap="round">
+
+        <path d="M95 300 Q125 280 155 295"/>
+        <path d="M95 315 Q125 295 160 310"/>
+        <path d="M100 330 Q130 310 158 325"/>
+        <path d="M105 345 Q130 330 153 340"/>
+      </g>
+
+      <!-- ER -->
+      <g class="part"
+         data-name="Endoplasmic Reticulum"
+         data-info="The endoplasmic reticulum is a network inside the cell. Rough ER helps make proteins, while smooth ER helps make lipids."
+         fill="none"
+         stroke="#8d62ad"
+         stroke-width="8"
+         stroke-linecap="round">
+
+        <path d="M410 490 Q440 465 470 490 T530 490"/>
+        <path d="M405 510 Q440 485 470 510 T535 510"/>
+        <path d="M415 530 Q445 505 475 530 T525 530"/>
+      </g>
+
+      <!-- Ribosomes -->
+      <g class="part"
+         data-name="Ribosomes"
+         data-info="Ribosomes are tiny structures that make proteins for the cell."
+         fill="#4b3c29">
+
+        <circle cx="300" cy="120" r="6"/>
+        <circle cx="320" cy="135" r="6"/>
+        <circle cx="575" cy="310" r="6"/>
+        <circle cx="590" cy="330" r="6"/>
+        <circle cx="300" cy="475" r="6"/>
+      </g>
+
+    </svg>
+  </div>
+
+  <aside class="info">
+    <h2 id="name">Plant Cell</h2>
+    <p id="description">
+      Click on a coloured part of the cell to see what it does.
+    </p>
+
+    <div class="tip">
+      Try clicking the green chloroplasts, blue vacuole, or purple nucleus.
+    </div>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
