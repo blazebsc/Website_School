@@ -25,7 +25,7 @@ vacuole.addEventListener("click", (e) => {
 
     const overlay = document.createElement("div");
     overlay.style.cssText = "position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:white;";
-    overlay.innerHTML = `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.BTJg1uqhA0Fulm79SZ2xpwHaE7%3Fpid%3DApi&f=1&ipt=7e395b4e7a2ccf64f4600f9416fdf417d6d7cf065344c09e06ae0d4cd3b28d55&ipo=images" style="max-width:100%;max-height:100%;">`;
+    overlay.innerHTML = `<img src="easter-egg.jpg" style="max-width:100%;max-height:100%;">`;
     document.body.appendChild(overlay);
 
     setTimeout(() => overlay.remove(), 500);
